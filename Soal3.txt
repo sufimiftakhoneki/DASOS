@@ -1,0 +1,15 @@
+<?php
+function tambah($start, $increment, $jumlah) {
+    $angka = $start;
+    echo $angka; // Menampilkan angka pertama
+    for ($i = 1; $i < $jumlah; $i++) {
+        $angka += $increment; // Menambahkan angka dengan increment
+        echo " " . $angka; // Menampilkan angka hasil penjumlahan
+    }
+}
+
+// Contoh Penggunaan:
+tambah(5, 7, 4); // Output: 5 7 12 19
+echo "<br>";
+tambah(1, 1, 5); // Output: 1 1 2 3 5
+?>

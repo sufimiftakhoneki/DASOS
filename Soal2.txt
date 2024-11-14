@@ -1,0 +1,13 @@
+SELECT 
+    p.product_name, 
+    p.price, 
+    s.sub_category_name, 
+    c.category_name
+FROM 
+    Product p
+JOIN 
+    Sub_Category s ON p.sub_category_id = s.id
+JOIN 
+    Kategori c ON s.category_id = c.id
+ORDER BY 
+    c.id, s.id, p.id;
