@@ -29,20 +29,3 @@ Before starting your project, make sure you configure the database settings corr
 
 1. **Open `application/config/database.php`**.
 2. **Modify the database connection settings** according to your local or production server:
-
-```php
-$db['default'] = array(
-    'dsn'   => '',
-    'hostname' => 'localhost',  // Change to your database server
-    'username' => 'your_db_username',  // Your database username
-    'password' => 'your_db_password',  // Your database password
-    'database' => 'your_db_name',  // Your database name
-    'dbdriver' => 'mysqli',  // Or another supported database driver
-    'dbprefix' => '', // Prefix for all table names (optional)
-    'pconnect' => FALSE, // Persistent connection (set to TRUE for better performance in some cases)
-    'db_debug' => (ENVIRONMENT !== 'production'), // Show debug messages in non-production environments
-    'cache_on' => FALSE, // Enable query caching
-    'cachedir' => '', // Set the path to cache folder (optional)
-    'char_set' => 'utf8', // Character set for the database connection
-    'dbcollat' => 'utf8_general_ci', // Collation for the database connection
-);
